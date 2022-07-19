@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000"
+        motion:autoTransition="animateToEnd">
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/previewImageView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="51dp"
+            android:layout_height="78dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintBottom_toTopOf="@+id/cameraButton"
+            motion:layout_constraintVertical_bias="1.0"
+            motion:layout_constraintHorizontal_bias="1.0"
+            motion:transitionEasing="linear" />
+        <Constraint
+            android:id="@+id/cameraXButton"
+            android:elevation="2dp"
+            android:layout_width="41dp"
+            android:layout_height="8dp"
+            android:visibility="invisible"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/cameraButton"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toStartOf="@+id/cameraButton"
+            motion:layout_constraintBottom_toBottomOf="@+id/cameraButton"
+            motion:layout_constraintVertical_bias="1.0"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:transitionEasing="accelerate" />
+        <Constraint
+            android:id="@+id/cameraButton"
+            motion:layout_constraintEnd_toStartOf="@+id/galleryButton"
+            motion:layout_constraintStart_toEndOf="@+id/cameraXButton"
+            android:elevation="2dp"
+            android:visibility="invisible"
+            android:layout_width="41dp"
+            android:layout_height="8dp"
+            android:layout_marginBottom="104dp"
+            motion:layout_constraintBottom_toTopOf="@+id/uploadButton"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:transitionEasing="accelerate" />
+        <Constraint
+            android:id="@+id/galleryButton"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/cameraButton"
+            android:visibility="invisible"
+            android:elevation="2dp"
+            android:layout_width="41dp"
+            android:layout_height="8dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/cameraButton"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/cameraButton"
+            motion:transitionEasing="accelerate" />
+        <Constraint
+            android:id="@+id/uploadButton"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="280dp"
+            android:layout_height="18dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:rotationX="0" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="@+id/cameraXButton"
+            android:layout_marginTop="0dp"
+            motion:layout_constraintHorizontal_bias="1.0"
+            motion:layout_constraintEnd_toEndOf="@+id/galleryButton"
+            android:layout_width="0dp"
+            motion:layout_constraintTop_toBottomOf="@+id/cameraButton"
+            android:id="@+id/descriptionTextInputLayout"
+            motion:layout_constraintBottom_toTopOf="@+id/uploadButton" />
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/previewImageView"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            motion:layout_constraintBottom_toTopOf="@+id/cameraButton"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintHorizontal_bias="0.0" />
+        <Constraint
+            android:id="@+id/cameraXButton"
+            android:elevation="2dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toTopOf="@+id/cameraButton"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toStartOf="@+id/cameraButton"
+            motion:layout_constraintBottom_toBottomOf="@+id/cameraButton"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintHorizontal_bias="0.5" />
+        <Constraint
+            android:id="@+id/cameraButton"
+            motion:layout_constraintEnd_toStartOf="@+id/galleryButton"
+            motion:layout_constraintStart_toEndOf="@+id/cameraXButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="55dp"
+            motion:layout_constraintBottom_toTopOf="@+id/uploadButton"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintHorizontal_bias="0.5" />
+        <Constraint
+            android:id="@+id/galleryButton"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/cameraButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="@+id/cameraButton"
+            android:layout_marginEnd="8dp"
+            motion:layout_constraintHorizontal_bias="0.5"
+            motion:layout_constraintTop_toTopOf="@+id/cameraButton" />
+        <Constraint
+            android:id="@+id/uploadButton"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintTop_toBottomOf="@+id/descriptionTextInputLayout" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_constraintStart_toStartOf="@+id/cameraXButton"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintEnd_toEndOf="@+id/galleryButton"
+            android:layout_width="0dp"
+            motion:layout_constraintTop_toBottomOf="@+id/cameraButton"
+            android:id="@+id/descriptionTextInputLayout" />
+        <Constraint
+            android:id="@+id/progressBarPost"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="invisible"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+</MotionScene>

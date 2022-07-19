@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app ="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/logout"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/showlogout">
+        <menu>
+            <item android:id="@+id/mapButotn"
+                android:title="@string/peta_cerita"/>
+            <item android:id="@+id/languangeButton"
+                android:title = "@string/ganti_bahasa"/>
+            <item android:id="@+id/logoutButton"
+                    android:title="@string/logout"/>
+        </menu>
+    </item>
+</menu>

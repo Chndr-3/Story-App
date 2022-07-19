@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">StoryApp</string>
+    <string name="signup">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="message_login_page">Silahkan Masuk Terlebih Dahulu</string>
+    <string name="title_login_page">Ingin Memposting Ceritamu?</string>
+    <string name="name">Nama</string>
+    <string name="greeting">Halo %1$s,\nBerikut daftar cerita yang dapat kamu baca.</string>
+    <string name="logout">Keluar</string>
+    <string name="Daftar">Daftar</string>
+    <string name="username">username</string>
+    <string name="submit">submitNewStories</string>
+    <string name="camera_x">camera_x</string>
+    <string name="camera">camera</string>
+    <string name="gallery">galeri</string>
+    <string name="upload">Unggah</string>
+    <string name="Deskripsi">Masukkan Deskripsimu</string>
+    <string name="showlogout">showLogout</string>
+    <string name="name_command">Masukkan nama anda</string>
+    <string name="email_command">Masukkan Email Anda</string>
+    <string name="password_command">Masukkan Password Baru</string>
+    <string name="belum_punya_akun_silahkan">Belum punya akun? silahkan</string>
+
+    <string name="email_signin">Masukkan Email Terlebih Dahulu</string>
+    <string name="password_signin">Masukkan Password Terlebih Dahulu</string>
+
+    <string name="password_requirement">Password need atleast 6 character</string>
+    <string name="email_requirement">Format email tidak sesuai</string>
+
+    <string name="camera_take_gagal">Gagal mengambil gambar</string>
+    <string name="camera_open_gagal">Gagal memunculkan kamera</string>
+    <string name="gagal_permission">Gagal mendapatkan izin</string>
+    <string name="choose_pictures">Pilih Gambar</string>
+    <string name="description_requirement">Masukkan deskripsi terlebih dahulu</string>
+
+    <string name="file_requirement">Masukkan berkas terlebih dahulu</string>
+
+
+    <string name="image_capture">image capture</string>
+    <string name="switch_camera">switch camera</string>
+    <string name="photo_detail">photo detail</string>
+    <string name="image_preview">image preview</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="ganti_bahasa">Ganti Bahasa</string>
+    <string name="peta_cerita">Peta Cerita</string>
+    <string name="coba_lagi">coba lagi</string>
+</resources>
